@@ -1,0 +1,67 @@
+body {
+  background-image: url("img/moraen_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #d1d3d4;
+}
+
+article {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img.logo {
+  flex: 0 0 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn {
+  margin: 5px;
+  flex:1 0 0;
+  width: 100%;
+}
+
+.btn-secondary {
+  background-color: #9ec0b9;
+  border-color: #9ec0b9;
+}
+
+.btn-secondary:hover {
+  background-color: #d1d3d4;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+@media all and (min-width: 650px) {
+  img.logo {
+    width: 600px;
+  }
+
+  nav {
+    width: 600px;
+    flex-direction: row;
+  }
+}
+@media all and (max-width: 649px) {
+  img.logo {
+    width: 80%;
+  }
+
+  nav {
+    width: 80%;
+    flex-direction: column;
+  }
+}
