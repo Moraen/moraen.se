@@ -2,12 +2,11 @@ body {
   background-image: url("img/moraen_bg.jpg");
   background-size: cover;
   background-position: center;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #d1d3d4;
 }
 
 article {
-  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,52 +16,49 @@ article {
 
 img.logo {
   flex: 0 0 0;
+  width: 100%;
 }
 
 nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 15px;
 }
 
-.btn {
-  margin: 5px;
+.knapp {
   flex:1 0 0;
   width: 100%;
+  text-align: center;
+  font-size: 1.1em;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
-.btn-secondary {
-  background-color: #9ec0b9;
-  border-color: #9ec0b9;
-}
-
-.btn-secondary:hover {
-  background-color: #d1d3d4;
-}
-
-.btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
+a, a:hover, a:active, a:visited {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media all and (min-width: 650px) {
-  img.logo {
-    width: 600px;
+  article {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   nav {
-    width: 600px;
     flex-direction: row;
   }
 }
 @media all and (max-width: 649px) {
-  img.logo {
+  article {
     width: 80%;
+    margin: 10%;
   }
 
   nav {
-    width: 80%;
     flex-direction: column;
   }
 }
