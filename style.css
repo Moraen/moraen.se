@@ -30,6 +30,7 @@ nav {
   margin: 5px;
   flex:1 0 0;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .btn-secondary {
